@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Veterinaria Patitas Suaves</title>
+
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100">
+
+  <h1 class="mb-4">Veterinaria Patitas Suaves</h1>
+
+  <form style="max-width: 400px; width: 100%;" class="p-4 border rounded shadow-sm">
+    
+    <div class="mb-3">
+      <label for="inputUsuario" class="form-label">Nombre de Usuario</label>
+      <input type="text" class="form-control" id="inputUsuario" placeholder="Ej: AnaVet">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Iniciar Sesión</button>
+    
+    <div id="mensajeError" class="text-danger mt-2"></div>
+  </form>
+
+</body>
+<style>
+    body{
+        background-image:url(assets/img/fondo.jpg);
+        background-position: center;
+        background-repeat:no-repeat;
+    }
+</style>
+<script src="script.js"></script>
+</html>
