@@ -11,9 +11,11 @@
 
   <h1 class="mb-4">Veterinaria Patitas Suaves</h1>
 
+
+<div id="seccion-formulario">
+
   <form style="max-width: 400px; width: 100%;" class="p-4 border rounded shadow-sm">
-    
-    <div class="mb-3">
+       <div class="mb-3">
       <label for="inputUsuario" class="form-label">Nombre de Usuario</label>
       <input type="text" class="form-control" id="inputUsuario" placeholder="Ej: AnaVet">
     </div>
@@ -27,7 +29,24 @@
     
     <div id="mensajeError" class="text-danger mt-2"></div>
   </form>
+</div>
 
+<div id="seccion-registro" style="display: none;">
+  <h2>Registrar Nuevo Paciente</h2>
+  <form id="formulario-mascotas" class="p-4 border rounded shadow-sm">
+<input type="text" id="nombreMascota" placeholder="Nombre Mascota" class="form-control mb-2">
+      <input type="text" id="tutorMascota" placeholder="Nombre Tutor" class="form-control mb-2">
+      <textarea id="evolucionMascota" placeholder="Evolución Médica" class="form-control mb-2"></textarea>
+      <button type="submit" class="btn btn-success">Guardar Paciente</button>
+   </form>
+
+   <div class="pt-4"> 
+   <h3>Lista de pacientes</h3>
+  <ul id="lista-pacientes" class="list-group"></ul>
+</div>
+
+
+</div>
 </body>
 <style>
     body{
